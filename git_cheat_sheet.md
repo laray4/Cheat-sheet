@@ -9,3 +9,6 @@
 
 ## Change your remote's URL
 ``git remote set-url origin <url>``
+
+## Push your branch to the remote repository:
+``git push -u origin <branch name>``
