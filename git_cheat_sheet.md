@@ -42,3 +42,18 @@ In the Command prompt, add the URL for the remote repository where your local re
  Push the changes in your local repository to GitHub.
 
 ``git push -f origin master``
+
+
+## Cloning a repository that contains submodules
+
+If you want to clone a repository including its submodules you can use the ``--recursive`` parameter.
+
+``git clone --recursive [URL to Git repo]``
+
+If you already have cloned a repository and now want to load it’s submodules you have to use submodule update.
+
+``git submodule update --init``
+
+If there are nested submodules:
+
+``git submodule update --init --recursive``
