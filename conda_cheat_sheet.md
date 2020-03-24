@@ -44,44 +44,44 @@
 
 # Managing .condarc Configuration
 
-``condaconfig --get``                               Get all keys and values from my .condarc file
+``conda config --get``                               Get all keys and values from my .condarc file
 
-``condaconfig --get channels``                      Get value of the key channels from .condarc file
+``conda config --get channels``                      Get value of the key channels from .condarc file
 
-``condaconfig --add channels pandas``               Add a new value to channels so ``condalooks for packages in this location
+``conda config --add channels pandas``               Add a new value to channels so ``condalooks for packages in this location
 
 # Managing Packages, Including Python
-``condalist``                                       View list of packages and versions installed in active environment
+``conda list``                                       View list of packages and versions installed in active environment
 
-``condasearch beautiful-soup``                      Search for a package to see if it is available to ``condainstall
+``conda search beautiful-soup``                      Search for a package to see if it is available to ``condainstall
 
-``condainstall -n bunnies beautiful-soup``          Install a new package
+``conda install -n bunnies beautiful-soup``          Install a new package
 
 NOTE: If you do not include the name of the environment, it will install in the current active environment.
 
-``condaupdate beautiful-soup``                      Update a package in the current environment
+``conda update beautiful-soup``                      Update a package in the current environment
 
-``condasearch --override-channels -c pandas bottleneck``    Search for a package in a specific location (the pandas channel on Anaconda.org)
+``conda search --override-channels -c pandas bottleneck``    Search for a package in a specific location (the pandas channel on Anaconda.org)
 
-``condainstall -c pandas bottleneck``               Install a package from a specific channel
+``conda install -c pandas bottleneck``               Install a package from a specific channel
 
-``condasearch --override-channels -c defaults beautiful-soup``  Search for a package to see if it is available from the Anacondarepository
+``conda search --override-channels -c defaults beautiful-soup``  Search for a package to see if it is available from the Anacondarepository
 
-``condainstall iopro accelerate``                   Install commercial Continuum packages
+``conda install iopro accelerate``                   Install commercial Continuum packages
 
-``condaskeleton pypi pyinstrument``                 Build a condapackage from a Python Package Index (PyPi) Package
-``condabuild pyinstrument``
+``conda skeleton pypi pyinstrument``                 Build a condapackage from a Python Package Index (PyPi) Package
+``conda build pyinstrument``
 
 
 
 # Removing Packages or Environments
 
 
-``condaremove --name bunnies beautiful-soup``           Remove one package from any named environment
+``conda remove --name bunnies beautiful-soup``           Remove one package from any named environment
 
-``condaremove beautiful-soup``                          Remove one package from the active environment
+``conda remove beautiful-soup``                          Remove one package from the active environment
 
-``condaremove --name bunnies beautiful-soup astroid``   Remove multiple packages from any environment
+``conda remove --name bunnies beautiful-soup astroid``   Remove multiple packages from any environment
 
-``condaremove --name snakes --all``                     Remove an environment
+``conda remove --name snakes --all``                     Remove an environment
 
